@@ -8,7 +8,7 @@ void DrawCircle(int x, int y, int radius, int isFilled)
         for(j = 0; j < radius*2; j++)
         {
             if(sqrt(pow(radius-j,2) + pow(radius-i,2) < radius))
-                DrawPixel(x+ i,y+ j, 1);
+                DrawPixel(x+ i,y+ j, '1');
         }
 
     }
