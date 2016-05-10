@@ -21,16 +21,16 @@ void DrawRectangle(int x, int y, int width, int height, int isFilled)
 {
     int i, j;
 
-    for(i = x; i <= x+width; i++)
+    for(i = x; i <= x+width-1; i++)
         {
             DrawPixel(i, y,'w');
-            DrawPixel(i, y+height,'w');
+            DrawPixel(i, y+height-1,'w');
         }
 
-    for(j = y; j <= y+height; j++)
+    for(j = y; j <= y+height-1; j++)
         {
             DrawPixel(x, j,'w');
-            DrawPixel(x+width, j,'w');
+            DrawPixel(x+width-1, j,'w');
         }
         if(isFilled = 1)
         {
