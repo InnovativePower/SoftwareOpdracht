@@ -35,3 +35,14 @@ void DrawRectangle(int x, int y, int width, int height, int isFilled)
             DrawPixel(x+width, j);
         }
 }
+
+//Betere naam bedenken voor length
+void DrawTriangle(int x, int y, int length)
+{
+    
+    
+    
+    
+    
+    
+}
