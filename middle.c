@@ -17,9 +17,32 @@ void DrawCircle(int x, int y, int radius, int isFilled)
 
 
 }
-void DrawRectangle(int x, int y, int width, int height)
+
+// Vars x and y define the top left corner of the rectangle
+void DrawRectangle(int x, int y, int width, int height, int isFilled)
 {
+    int i, j
+    
+    for(i = x; i < x+width; i++)
+        {
+            DrawPixel(i, y);
+            DrawPixel(i, y-height);
+        }
+    
+    for(j = y; j < y-height; j++)
+        {
+            DrawPixel(x, j);
+            DrawPixel(x+width, j);
+        }
+}
 
-
-
+//Betere naam bedenken voor length
+void DrawTriangle(int x, int y, int length)
+{
+    
+    
+    
+    
+    
+    
 }
