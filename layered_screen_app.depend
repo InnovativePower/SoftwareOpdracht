@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1461529382 source:d:\casus\layered_screen_app\bottom.c
+	"math.h"
+	"bottom.h"
+	<stdlib.h>
+	<stdio.h>
+
+1461529445 source:d:\casus\layered_screen_app\main.c
+	<stdio.h>
+	<stdlib.h>
+	"top.h"
+
+1461525449 d:\casus\layered_screen_app\top.h
+	"middle.h"
+
+1461531050 d:\casus\layered_screen_app\middle.h
+	"bottom.h"
+
+1461531079 d:\casus\layered_screen_app\bottom.h
+
+1461531158 source:d:\casus\layered_screen_app\middle.c
+	"middle.h"
+	"math.h"
+
+1461520092 d:\casus\layered_screen_app\bottom.c
+	"math.h"
+	"bottom.h"
+	<stdlib.h>
+
+1461525439 source:d:\casus\layered_screen_app\top.c
+	"top.h"
+
