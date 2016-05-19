@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1462884953 source:c:\users\daan\desktop\softwareopdracht\bottom.c
+	"bottom.h"
+
+1462882957 c:\users\daan\desktop\softwareopdracht\bottom.h
+	<stdlib.h>
+	<stdio.h>
+
+1463567082 source:c:\users\daan\desktop\softwareopdracht\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	"top.h"
+
+1462879782 c:\users\daan\desktop\softwareopdracht\top.h
+	"middle.h"
+
+1462964471 c:\users\daan\desktop\softwareopdracht\middle.h
+	"bottom.h"
+
+1463566913 source:c:\users\daan\desktop\softwareopdracht\middle.c
+	"middle.h"
+	"math.h"
+
+1462879782 source:c:\users\daan\desktop\softwareopdracht\top.c
+	"top.h"
+
