@@ -42,7 +42,6 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="main.o" />
 		<Unit filename="middle.c">
 			<Option compilerVar="CC" />
 		</Unit>
