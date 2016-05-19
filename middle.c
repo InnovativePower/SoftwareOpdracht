@@ -1,6 +1,7 @@
 #include "middle.h"
-#include "math.h"
+#include <math.h>
 #include "stm32_ub_vga_screen.h"
+#define PI 3.14159
 void DrawPixel(int x, int y, char color)
 {
 	UB_VGA_SetPixel(x,y,color);
@@ -14,7 +15,9 @@ void DrawCircle(int x, int y, int radius, char color, int isFilled)
         {
             for(j = 0; j < radius*2; j++)
             {
-                if(ceil(sqrt(pow(radius-j,2) + pow(radius-i,2))) == radius-1)
+            	float hDistance = radius-i;
+            	float vDistance = radius-j;
+                if(vDistance*vDistance + hDistance*hDistance == (radius-1)*(radius-1))
                     DrawPixel(x+ i,y+ j, color);
             }
 
@@ -26,14 +29,17 @@ void DrawCircle(int x, int y, int radius, char color, int isFilled)
         {
             for(j = 0; j < radius*2; j++)
             {
-                if(ceil(sqrt(pow(radius-j,2) + pow(radius-i,2))) <= radius-1)
-                    DrawPixel(x+ i,y+ j, color);
+            	float hDistance = radius-i;
+            	float vDistance = radius-j;
+            	if(ceil(vDistance*vDistance + hDistance*hDistance )<= (radius-1)*(radius-1))
+                    DrawPixel(x+ i-radius,y+ j-radius, color);
             }
 
         }
     }
 
 }
+
 /*void DrawCircle2(int x, int y, int radius, char color)
 {
 
@@ -75,24 +81,23 @@ void DrawRectangle(int x, int y, int width, int height, char color, int isFilled
     int i, j;
 
     for(i = x; i <= x+width-1; i++)
-        {
-            DrawPixel(i, y,color);
-            DrawPixel(i, y+height-1,color);
-        }
+	{
+		DrawPixel(i, y,color);
+		DrawPixel(i, y+height-1,color);
+	}
 
     for(j = y; j <= y+height-1; j++)
-        {
-            DrawPixel(x, j,color);
-            DrawPixel(x+width-1, j,color);
-        }
-        if(isFilled == 1)
-        {
-                if(width >= 1 && height >= 1)
-                {
-                    DrawRectangle(x+1,y+1,width-1,height-1,color,1);
-                }
-
-        }
+	{
+		DrawPixel(x, j,color);
+		DrawPixel(x+width-1, j,color);
+	}
+	if(isFilled == 1)
+	{
+			if(width >= 1 && height >= 1)
+			{
+				DrawRectangle(x+1,y+1,width-1,height-1,color,1);
+			}
+	}
 }
 void DrawLine(int x1, int y1, int x2, int y2, char color)
 {
@@ -119,20 +124,31 @@ void DrawLine(int x1, int y1, int x2, int y2, char color)
         DrawPixel(x1 + i*dx/length,y1 + i*dy/length,color);
     }
 }
-//Betere naam bedenken voor length
-void DrawTriangle(int x, int y, char color, int length)
+/*	Draw a triangle with sides of equal length
+ *	The triangle will be drawn with x and y as its center
+ *
+ *
+ */
+void DrawTriangle(int x, int y, int sideLength,float angle, char color, int isFilled)
 {
-    float offset = 0.5f * (float)length;
-    int x1 = x;
-    int y1 = y - offset;
-    int x2 = x - offset;
-    int y2 = y + offset;
-    int x3 = x + offset;
-    int y3 = y + offset;
+	/* The ratio of the length of a side and the radius of the circle the triangle resides in is the square root of 0.8
+	 *
+	 *
+	 */
+	float ratio = sqrt(0.8);
+	int x1 = x + ratio*sideLength*cos(PI*(angle + 120)/180);
+    int y1 = y + ratio*sideLength*sin(PI*(angle + 120)/180);
+    int x2 = x + ratio*sideLength*cos(PI*(angle + 240)/180);
+    int y2 = y + ratio*sideLength*sin(PI*(angle + 240)/180);
+    int x3 = x + ratio*sideLength*cos(PI*(angle)/180);
+    int y3 = y + ratio*sideLength*sin(PI*(angle)/180);
     DrawLine(x1,y1,x2,y2,color);
     DrawLine(x2,y2,x3,y3,color);
     DrawLine(x3,y3,x1,y1,color);
-
+    if(isFilled && sideLength > 0)
+    {
+    	DrawTriangle(x,y,sideLength-1,angle,color,isFilled);
+    }
 
 
 }
