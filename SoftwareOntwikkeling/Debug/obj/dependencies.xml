@@ -19,7 +19,15 @@
       <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154c737fd80">
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
+      <source file="..\..\..\arialNormal.h" lastModified="154d006bd86">
+         <include file="..\..\..\Font.h"/>
+      </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="154c737fd80">
+      </source>
+      <source file="..\..\..\arialNormal.c" lastModified="154d0285f22">
+         <include file="..\..\..\arialNormal.h"/>
+      </source>
+      <source file="..\..\..\Font.h" lastModified="154d00808f1">
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -34,13 +42,15 @@
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\middle.h" lastModified="154cb56a05c">
+      <source file="..\..\..\Font.c" lastModified="154d0052ab1">
+      </source>
+      <source file="..\..\..\middle.h" lastModified="154d36c64b8">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\middle.c" lastModified="154cb5e5b2f">
+      <source file="..\..\..\middle.c" lastModified="154d36c5291">
          <include file="..\..\..\middle.h"/>
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>

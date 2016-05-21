@@ -2,6 +2,7 @@
 #include <math.h>
 #include "stm32_ub_vga_screen.h"
 #define PI 3.14159
+#define DEGREES_TO_RAD PI/180
 void DrawPixel(int x, int y, char color)
 {
 	UB_VGA_SetPixel(x,y,color);
@@ -151,4 +152,29 @@ void DrawTriangle(int x, int y, int sideLength,float angle, char color, int isFi
     }
 
 
+}
+void DrawEllipse(int x, int y, int width, int height, char color)
+{
+	float xRadius = 1;
+	float yRadius =1;
+
+	//Bepalen in welke richting de ellipse moet worden ingedrukt
+	if(height > width)
+	{
+		yRadius = 0.5 * height * height / width;
+		xRadius = 0.5 * height;
+
+	}
+	else
+	{
+		xRadius = 0.5 * width * width / height;
+		yRadius = 0.5 * width;
+	}
+	//Pixel coordinaten berekenen
+	for(int i = 0; i < 360; i++)
+	{
+		int xPixel = x + xRadius*cos(i*DEGREES_TO_RAD );
+		int yPixel = y + yRadius*sin(i*DEGREES_TO_RAD );
+		DrawPixel(xPixel, yPixel, color);
+	}
 }

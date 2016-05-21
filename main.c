@@ -28,22 +28,17 @@ int main(void)
   UB_VGA_FillScreen(VGA_COL_BLACK);
   	  UB_VGA_SetPixel(10,10,10);
 
- // while(1)
-//  {
-  	for(int i = 0; i < 71; i++)
-  	{
   		UB_VGA_FillScreen(VGA_COL_BLACK);
-		DrawCircle(100,100,50,VGA_COL_RED,1);
-		DrawCircle(100,100,40,VGA_COL_WHITE,1);
-		DrawCircle(100,100,30,VGA_COL_RED,1);
-		DrawCircle(100,100,20,VGA_COL_WHITE,1);
-		DrawCircle(100,100,10,VGA_COL_RED,1);
+	//	DrawCircle(100,100,50,VGA_COL_RED,1);
+	//	DrawCircle(100,100,40,VGA_COL_WHITE,1);
+	//	DrawCircle(100,100,30,VGA_COL_RED,1);
+	//	DrawCircle(100,100,20,VGA_COL_WHITE,1);
+	//	DrawCircle(100,100,10,VGA_COL_RED,1);
 
 
-		DrawRectangle(189-i,97,100,6,VGA_COL_BROWN,1);
-		DrawTriangle(180-i,100,20,180,VGA_COL_GRAY,1);
-		for(int j = 0; j < 10000; j++);
-  	}
+		DrawRectangle(18i,97,100,6,VGA_COL_BROWN,1);
+		DrawEllipse(200,200,30,40,VGA_COL_BLUE);
+		DrawEllipse(250,200,40,30,VGA_COL_BLUE);
 	while(1);
 }
 
