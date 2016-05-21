@@ -80,25 +80,30 @@ void DrawCircle(int x, int y, int radius, char color, int isFilled)
 void DrawRectangle(int x, int y, int width, int height, char color, int isFilled)
 {
     int i, j;
-
-    for(i = x; i <= x+width-1; i++)
-	{
-		DrawPixel(i, y,color);
-		DrawPixel(i, y+height-1,color);
-	}
-
-    for(j = y; j <= y+height-1; j++)
-	{
-		DrawPixel(x, j,color);
-		DrawPixel(x+width-1, j,color);
-	}
-	if(isFilled == 1)
-	{
-			if(width >= 1 && height >= 1)
+    if(isFilled)
+    {
+		for(i = 0; i < width; i++)
+		{
+			for(j = 0; j < height; j++)
 			{
-				DrawRectangle(x+1,y+1,width-1,height-1,color,1);
+				DrawPixel(x + i, y+ j, color);
 			}
+		}
 	}
+    else
+    {
+    	for(i = 0; i < width+1; i++)
+    	{
+    		DrawPixel(x + i, y, color);
+    		DrawPixel(x + i, y+ height, color);
+    	}
+    	for(j = 0; j < height+1; j++)
+    	{
+    		DrawPixel(x, y + j, color);
+    		DrawPixel(x + width, y+ j, color);
+    	}
+    }
+
 }
 void DrawLine(int x1, int y1, int x2, int y2, char color)
 {
@@ -153,22 +158,25 @@ void DrawTriangle(int x, int y, int sideLength,float angle, char color, int isFi
 
 
 }
-void DrawEllipse(int x, int y, int width, int height, char color)
+void DrawEllipse(int x, int y, int width, int height, char color,int isFilled)
 {
 	float xRadius = 1;
 	float yRadius =1;
-
+	if(isFilled && width > 0 && height > 0)
+	{
+		DrawEllipse(x,y,width-1,height-1,fillColor,1);
+	}
 	//Bepalen in welke richting de ellipse moet worden ingedrukt
 	if(height > width)
 	{
-		yRadius = 0.5 * height * height / width;
-		xRadius = 0.5 * height;
+		xRadius = 0.5 * height * width / height;
+		yRadius = 0.5 * height;
 
 	}
 	else
 	{
-		xRadius = 0.5 * width * width / height;
-		yRadius = 0.5 * width;
+		yRadius = 0.5 * width * height / width;
+		xRadius = 0.5 * width;
 	}
 	//Pixel coordinaten berekenen
 	for(int i = 0; i < 360; i++)
@@ -177,4 +185,5 @@ void DrawEllipse(int x, int y, int width, int height, char color)
 		int yPixel = y + yRadius*sin(i*DEGREES_TO_RAD );
 		DrawPixel(xPixel, yPixel, color);
 	}
+
 }

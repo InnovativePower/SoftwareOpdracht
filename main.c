@@ -20,7 +20,7 @@ int main(void)
 {
 
 	//  uint32_t n;
-
+	fillColor = VGA_COL_RED;
 	SystemInit(); // System speed to 168MHz
 
 	UB_VGA_Screen_Init(); // Init VGA-Screen
@@ -36,9 +36,10 @@ int main(void)
 	//	DrawCircle(100,100,10,VGA_COL_RED,1);
 
 
-		DrawRectangle(18i,97,100,6,VGA_COL_BROWN,1);
-		DrawEllipse(200,200,30,40,VGA_COL_BLUE);
-		DrawEllipse(250,200,40,30,VGA_COL_BLUE);
+		DrawRectangle(180,97,100,6,VGA_COL_BROWN,1);
+		DrawRectangle(180,150,100,6,VGA_COL_BLUE,0);
+		DrawEllipse(200,200,30,40,VGA_COL_BLUE,0);
+		DrawEllipse(250,200,40,30,VGA_COL_BLUE,1);
 	while(1);
 }
 
