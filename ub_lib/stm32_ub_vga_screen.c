@@ -88,8 +88,8 @@ void UB_VGA_FillScreen(uint8_t color)
 //--------------------------------------------------------------
 void UB_VGA_SetPixel(uint16_t xp, uint16_t yp, uint8_t color)
 {
-  if(xp>=VGA_DISPLAY_X) xp=0;
-  if(yp>=VGA_DISPLAY_Y) yp=0;
+  if(xp>=VGA_DISPLAY_X) xp=xp % VGA_DISPLAY_X;
+  if(yp>=VGA_DISPLAY_Y) yp=yp % VGA_DISPLAY_Y;
 
   // Write pixel to ram
   VGA_RAM1[(yp*(VGA_DISPLAY_X+1))+xp]=color;
@@ -334,6 +334,7 @@ void TIM2_IRQHandler(void)
   TIM_ClearITPendingBit(TIM2, TIM_IT_CC3);
 
   VGA.hsync_cnt++;
+
   if(VGA.hsync_cnt>=VGA_VSYNC_PERIODE) {
     // -----------
     VGA.hsync_cnt=0;

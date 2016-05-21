@@ -18,21 +18,17 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="arialNormal.c" partName="arialNormal.c" path="C:/Users/daanv/Desktop/SoftwareOpdracht-master/arialNormal.c" title="arialNormal.c" tooltip="C:/Users/daanv/Desktop/SoftwareOpdracht-master/arialNormal.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SoftwareOntwikkeling/arialNormal.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="46706" selectionTopPixel="36771"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="middle.h" partName="middle.h" path="C:/Users/daanv/Desktop/SoftwareOpdracht-master/middle.h" title="middle.h" tooltip="C:/Users/daanv/Desktop/SoftwareOpdracht-master/middle.h" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="middle.h" partName="middle.h" path="C:/Users/daanv/Desktop/SoftwareOpdracht/middle.h" title="middle.h" tooltip="C:/Users/daanv/Desktop/SoftwareOpdracht/middle.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SoftwareOntwikkeling/middle.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="457" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="middle.c" partName="middle.c" path="C:/Users/daanv/Desktop/SoftwareOpdracht-master/middle.c" title="middle.c" tooltip="C:/Users/daanv/Desktop/SoftwareOpdracht-master/middle.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="middle.c" partName="middle.c" path="C:/Users/daanv/Desktop/SoftwareOpdracht/middle.c" title="middle.c" tooltip="C:/Users/daanv/Desktop/SoftwareOpdracht/middle.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SoftwareOntwikkeling/middle.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4481" selectionTopPixel="2121"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="125" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/daanv/Desktop/SoftwareOpdracht-master/main.c" title="main.c" tooltip="C:/Users/daanv/Desktop/SoftwareOpdracht-master/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/daanv/Desktop/SoftwareOpdracht/main.c" title="main.c" tooltip="C:/Users/daanv/Desktop/SoftwareOpdracht/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SoftwareOntwikkeling/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="698" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="610" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -42,7 +38,7 @@
 <element path="/SoftwareOntwikkeling"/>
 </expanded>
 <selection>
-<element path="/SoftwareOntwikkeling/main.c"/>
+<element path="/SoftwareOntwikkeling/middle.c"/>
 </selection>
 </viewState>
 </view>
@@ -144,166 +140,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/text.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/Font.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/Font.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/arialNormal.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/text.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/arialNormal.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/middle.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/middle.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/text.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SoftwareOntwikkeling/main.c"/>
 </editors>
-<item historyLabel="text.h" index="0">
-<position info="not_deleted" x="134" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="550" y="0"/>
 </item>
-<item historyLabel="text.h" index="0">
-<position info="not_deleted" x="134" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position/>
 </item>
-<item historyLabel="text.c" index="4">
-<position info="not_deleted" x="37" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="2252" y="0"/>
 </item>
-<item historyLabel="text.c" index="4">
-<position info="not_deleted" x="126" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="345" y="0"/>
 </item>
-<item historyLabel="text.c" index="4">
-<position info="not_deleted" x="604" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="2152" y="0"/>
 </item>
-<item historyLabel="arialNormal.c" index="5">
-<position info="not_deleted" x="45704" y="0"/>
+<item historyLabel="main.c" index="0">
+<position/>
 </item>
-<item historyLabel="arialNormal.h" index="3">
-<position info="not_deleted" x="188" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="65" y="13"/>
 </item>
-<item historyLabel="arialNormal.c" index="5">
-<position info="not_deleted" x="46706" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="828" y="0"/>
 </item>
-<item historyLabel="arialNormal.h" index="3">
-<position info="not_deleted" x="188" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="2152" y="0"/>
 </item>
-<item historyLabel="Font.c" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="65" y="13"/>
 </item>
-<item historyLabel="Font.h" index="2">
-<position info="not_deleted" x="331" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="828" y="0"/>
 </item>
-<item historyLabel="text.h" index="0">
-<position info="not_deleted" x="134" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="1417" y="0"/>
 </item>
-<item historyLabel="text.c" index="4">
-<position info="not_deleted" x="291" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="848" y="13"/>
 </item>
-<item historyLabel="arialNormal.h" index="3">
-<position info="not_deleted" x="188" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="78" y="0"/>
 </item>
-<item historyLabel="text.c" index="4">
-<position info="not_deleted" x="281" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="1417" y="0"/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4527" y="0"/>
-</item>
-<item historyLabel="text.c" index="4">
-<position info="not_deleted" x="281" y="0"/>
-</item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4527" y="0"/>
-</item>
-<item historyLabel="middle.h" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="text.h" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="middle.h" index="7">
-<position info="not_deleted" x="472" y="0"/>
-</item>
-<item historyLabel="main.c" index="9">
+<item historyLabel="main.c" index="0">
 <position info="not_deleted" x="18" y="0"/>
 </item>
-<item historyLabel="middle.h" index="7">
-<position info="not_deleted" x="409" y="11"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="461" y="0"/>
 </item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="964" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="1534" y="0"/>
 </item>
-<item historyLabel="middle.c" index="6">
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="461" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="971" y="0"/>
+</item>
+<item historyLabel="middle.c" index="1">
 <position/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4151" y="2"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="971" y="0"/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4061" y="0"/>
-</item>
-<item historyLabel="middle.c" index="6">
+<item historyLabel="middle.c" index="1">
 <position/>
 </item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4379" y="0"/>
-</item>
-<item historyLabel="middle.h" index="7">
-<position info="not_deleted" x="409" y="11"/>
-</item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4379" y="0"/>
-</item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4312" y="0"/>
-</item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4272" y="0"/>
-</item>
-<item historyLabel="middle.c" index="6">
+<item historyLabel="middle.c" index="1">
 <position/>
 </item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="1036" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="720" y="0"/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4004" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position/>
 </item>
-<item historyLabel="middle.h" index="7">
-<position info="not_deleted" x="409" y="11"/>
+<item historyLabel="main.c" index="0">
+<position/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4004" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="736" y="0"/>
 </item>
-<item historyLabel="middle.h" index="7">
-<position info="not_deleted" x="457" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position/>
 </item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="1037" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="737" y="0"/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4465" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="531" y="0"/>
 </item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="1037" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="705" y="32"/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4061" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="531" y="0"/>
 </item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="1070" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4004" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="310" y="0"/>
 </item>
-<item historyLabel="middle.h" index="7">
-<position info="not_deleted" x="457" y="0"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="719" y="0"/>
 </item>
-<item historyLabel="middle.c" index="6">
-<position info="not_deleted" x="4481" y="0"/>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="310" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="9">
-<position info="not_deleted" x="1010" y="44"/>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="736" y="0"/>
+</item>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="1331" y="0"/>
+</item>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="17" y="41"/>
+</item>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="1331" y="0"/>
+</item>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="999" y="0"/>
+</item>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="141" y="0"/>
+</item>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="125" y="17"/>
+</item>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="17" y="41"/>
+</item>
+<item historyLabel="middle.h" index="2">
+<position info="not_deleted" x="660" y="0"/>
+</item>
+<item historyLabel="middle.c" index="1">
+<position info="not_deleted" x="125" y="17"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="531" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="610" y="0"/>
+</item>
+<item active="true" historyLabel="middle.h" index="2">
+<position info="not_deleted" x="660" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

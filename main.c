@@ -18,28 +18,37 @@
 
 int main(void)
 {
-
-	//  uint32_t n;
-	fillColor = VGA_COL_RED;
+	///Low level initialization
 	SystemInit(); // System speed to 168MHz
-
 	UB_VGA_Screen_Init(); // Init VGA-Screen
+	UB_VGA_FillScreen(VGA_COL_BLACK);
+  	UB_VGA_SetPixel(10,10,10);
+  	//UB_VGA_FillScreen(VGA_COL_BLACK);
 
-  UB_VGA_FillScreen(VGA_COL_BLACK);
-  	  UB_VGA_SetPixel(10,10,10);
-
-  		UB_VGA_FillScreen(VGA_COL_BLACK);
-	//	DrawCircle(100,100,50,VGA_COL_RED,1);
-	//	DrawCircle(100,100,40,VGA_COL_WHITE,1);
-	//	DrawCircle(100,100,30,VGA_COL_RED,1);
-	//	DrawCircle(100,100,20,VGA_COL_WHITE,1);
-	//	DrawCircle(100,100,10,VGA_COL_RED,1);
+	///Mid level initialization
+	InitMiddle();
+	SetLineColor(VGA_COL_BLUE);
+	SetFillColor(VGA_COL_RED);
 
 
-		DrawRectangle(180,97,100,6,VGA_COL_BROWN,1);
-		DrawRectangle(180,150,100,6,VGA_COL_BLUE,0);
-		DrawEllipse(200,200,30,40,VGA_COL_BLUE,0);
-		DrawEllipse(250,200,40,30,VGA_COL_BLUE,1);
+
+
+
+
+	UB_VGA_FillScreen(VGA_COL_BLACK);
+	DrawCircle(50,100,30,1);
+
+	SetFillColor(VGA_COL_GREEN);
+
+	SetFillColor(VGA_COL_YELLOW);
+
+
+	DrawEllipse(150,150,20,100,1);
+	SetFillColor(VGA_COL_MAGENTA);
+	DrawSimpleTriangle(100,100,40,1);
+	SetLineColor(VGA_COL_GREEN);
+	SetFillColor(VGA_COL_CYAN);
+	DrawRectangle(200,50,100,100,1);
 	while(1);
 }
 
