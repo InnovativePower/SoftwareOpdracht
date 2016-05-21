@@ -49,6 +49,7 @@ int main(void)
 	SetLineColor(VGA_COL_GREEN);
 	SetFillColor(VGA_COL_CYAN);
 	DrawRectangle(200,50,100,100,1);
+	DrawTriangle(80,50,100,120,180,200,1);
 	while(1);
 }
 

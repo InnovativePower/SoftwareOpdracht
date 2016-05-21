@@ -112,6 +112,47 @@ void DrawLine(int x1, int y1, int x2, int y2)
  *
  *
  */
+void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, int isFilled)
+{
+	if(isFilled)
+	{
+		float dx1 = x2 - x1;
+		float dy1 = y2 - y1;
+		float dx2 = x3 - x2;
+		float dy2 = y3 - y2;
+		float dx3 = x1 - x3;
+		float dy3 = y1 - y3;
+
+		float length1 = sqrt(dx1*dx1 + dy1*dy1);
+		float length2 = sqrt(dx2*dx2 + dy2*dy2);
+		float length3 = sqrt(dx3*dx3 + dy3*dy3);
+
+		char lineColorBuffer = lineColor;
+		SetLineColor(fillColor);
+		for(int i = 0; i < length1;i++)
+		{
+			float lineX = i*dx1/length1;
+			float lineY = i*dy1/length1;
+			DrawLine(x1 +lineX, y1 + lineY,x3 , y3);
+		}
+		for(int i = 0; i < length2;i++)
+		{
+			float lineX = i*dx2/length2;
+			float lineY = i*dy2/length2;
+			DrawLine(x2 +lineX, y2 + lineY,x1 , y1);
+		}
+		for(int i = 0; i < length3;i++)
+		{
+			float lineX = i*dx3/length3;
+			float lineY = i*dy3/length3;
+			DrawLine(x3 +lineX, y3 + lineY,x2 , y2);
+		}
+		SetLineColor(lineColorBuffer);
+	}
+	DrawLine(x1,y1,x2,y2);
+	DrawLine(x2,y2,x3,y3);
+	DrawLine(x3,y3,x1,y1);
+}
 void DrawSimpleTriangle(int x, int y, float sideLength,int isFilled)
 {
 

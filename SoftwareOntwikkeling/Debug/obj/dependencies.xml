@@ -34,13 +34,13 @@
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\middle.h" lastModified="154d49b5968">
+      <source file="..\..\..\middle.h" lastModified="154d5a0c221">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\middle.c" lastModified="154d4b6dbeb">
+      <source file="..\..\..\middle.c" lastModified="154d5bb5732">
          <include file="..\..\..\middle.h"/>
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
