@@ -132,7 +132,38 @@ void DrawTriangle(int x, int y, char color, int length)
     DrawLine(x1,y1,x2,y2,color);
     DrawLine(x2,y2,x3,y3,color);
     DrawLine(x3,y3,x1,y1,color);
+}
 
+void DrawEllipse(int x, int y, int height, int width, char color)
+{
+	int radius;
+	
+	//Stapgrootte in radialen, deze moet wsl nog gefinetuned worden
+	int step = 2*Pi/200;
 
-
+	//Center coordinaten
+	int h = x + 0.5*width;
+	int k = y + 0.5*height;
+	
+	//Bepalen in welke richting de ellipse moet worden ingedrukt
+	if(height > width)
+	{
+		xFactor = 1;
+		yFactor = width / height;
+		radius = 0.5*width;
+	} 
+	else
+	{
+		xFactor = height / width;
+		yFactor = 1;
+		radius = 0.5*height;
+	}
+	
+	//Pixel coordinaten berekenen
+	for(i = 0; i < 2*Pi; i+=step)
+	{
+		int xPixel = h + xFactor*radius*sin(i);
+		int yPixel = k + yFactor*radius*sin(i);
+		DrawPixel(xPixel, yPixel, color);
+	}
 }
