@@ -95,7 +95,19 @@ void UB_VGA_SetPixel(uint16_t xp, uint16_t yp, uint8_t color)
   VGA_RAM1[(yp*(VGA_DISPLAY_X+1))+xp]=color;
 }
 
-
+/*
+*   Read a pixel from the RAM memory used to write to the VGA screen
+*/
+char UB_VGA_ReadPixel(uint16_t xp, uint16_t yp)
+{
+    char value;
+    //if xp/yp are out of bounds take max value
+    if(xp>=VGA_DISPLAY_X) xp=xp % VGA_DISPLAY_X;
+    if(yp>=VGA_DISPLAY_Y) yp=yp % VGA_DISPLAY_Y;
+    //read VGA RAM
+    value = VGA_RAM1[(yp*(VGA_DISPLAY_X+1)+xp];
+    return value;
+}
 //--------------------------------------------------------------
 // interne Funktionen
 // init aller IO-Pins
@@ -109,7 +121,7 @@ void P_VGA_InitIO(void)
   // init RGB-Pins (PE8 - PE15)
   // as normal GPIOs
   //---------------------------------------------
- 
+
   // Clock Enable
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOE, ENABLE);
 
