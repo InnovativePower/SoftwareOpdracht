@@ -1,53 +1,62 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis -I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht -I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis_boot -I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis_lib -I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\ub_lib -I..\..\..\..\..\Users\daanv -I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis_lib\include -I..\..\..\..\..\Users\daanv\Desktop -I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\-lm">
-      <target file="syscalls.o" lastModified="154db6e9de1">
-         <source file="..\..\..\syscalls\syscalls.c" lastModified="154cb277e4f"/>
+      <target file="stm32f4xx_gpio.o" lastModified="154de38ff23">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="154db7fdacc"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="154db6e9d64">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="154c737fd80"/>
+      <target file="tnrCursive.o" lastModified="154dec114a8">
+         <source file="..\..\..\tnrCursive.c" lastModified="154dec112ef"/>
       </target>
-      <target file="stm32_ub_vga_screen.o" lastModified="154db6e9eeb">
-         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154d3d5bd61"/>
+      <target file="stm32_ub_vga_screen.o" lastModified="154dec3bd16">
+         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154db7fde30"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="154db6e9e3f">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="154c737fd80"/>
+      <target file="startup_stm32f4xx.o" lastModified="154de38fdaf">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="154db7fdaa0"/>
       </target>
-      <target file="Font.o" lastModified="154db6e9ce7">
-         <source file="..\..\..\Font.c" lastModified="154d0052ab1"/>
+      <target file="stm32f4xx_tim.o" lastModified="154de3902c3">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="154db7fdad4"/>
       </target>
-      <target file="middle.o" lastModified="154db6e9fac">
-         <source file="..\..\..\middle.c" lastModified="154d5bb534a"/>
+      <target file="Font.o" lastModified="154de38fe9b">
+         <source file="..\..\..\Font.c" lastModified="154d98c8690"/>
       </target>
-      <target file="arialBold.o" lastModified="154db6f0c8e">
-         <source file="..\..\..\arialBold.c" lastModified="154db6ebeae"/>
+      <target file="arialCursive.o" lastModified="154deb2db86">
+         <source file="..\..\..\arialCursive.c" lastModified="154deb2d9e4"/>
       </target>
-      <target file="stm32f4xx_tim.o" lastModified="154db6ea058">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="154c737fd80"/>
+      <target file="system_stm32f4xx.o" lastModified="154de38ff67">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="154db7fdaaf"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="154db6e9da3">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="154c737fd80"/>
+      <target file="middle.o" lastModified="154dec3bd8f">
+         <source file="..\..\..\middle.c" lastModified="154ddbdc0a8"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="154db6e9c27">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="154c737fd80"/>
+      <target file="misc.o" lastModified="154de390196">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="154db7fdac5"/>
       </target>
-      <target file="main.o" lastModified="154db764830">
-         <source file="..\..\..\main.c" lastModified="154db76468b"/>
+      <target file="stm32f4xx_dma.o" lastModified="154de3900c0">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="154db7fdac8"/>
       </target>
-      <target file="arialCursive.o" lastModified="154db745db0">
-         <source file="..\..\..\arialCursive.c" lastModified="154db745c18"/>
+      <target file="arialBold.o" lastModified="154deae3f31">
+         <source file="..\..\..\arialBold.c" lastModified="154deae3da2"/>
       </target>
-      <target file="text.o" lastModified="154db7313c3">
-         <source file="..\..\..\text.c" lastModified="154db7311b6"/>
+      <target file="tnrBold.o" lastModified="154debb1afd">
+         <source file="..\..\..\tnrBold.c" lastModified="154debaebed"/>
       </target>
-      <target file="arialNormal.o" lastModified="154db6e9be5">
-         <source file="..\..\..\arialNormal.c" lastModified="154db2ce1b5"/>
+      <target file="tnrNormal.o" lastModified="154dea9ded4">
+         <source file="..\..\..\tnrNormal.c" lastModified="154dea9dd48"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="154db6e9cc8">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="154cb1ba3a1"/>
+      <target file="stm32f4xx_rcc.o" lastModified="154de38fe6f">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="154db7fdacf"/>
       </target>
-      <target file="misc.o" lastModified="154db6e9f3e">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="154c737fd80"/>
+      <target file="arialNormal.o" lastModified="154deabc3b9">
+         <source file="..\..\..\arialNormal.c" lastModified="154deabc227"/>
+      </target>
+      <target file="syscalls.o" lastModified="154de390067">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="154db7fdade"/>
+      </target>
+      <target file="text.o" lastModified="154debda92f">
+         <source file="..\..\..\text.c" lastModified="154debda673"/>
+      </target>
+      <target file="main.o" lastModified="154dec3bcc2">
+         <source file="..\..\..\main.c" lastModified="154dec0b7bd"/>
       </target>
    </processor>
 </history>

@@ -9,14 +9,22 @@ void InitMiddle()
 	lineColor = 0;
 	fillColor = 0;
 }
+
+///Set the line color for shapes, this color stays the same until it is changed by calling this function with a different value
+///This color applies to all shapes
 void SetLineColor(char newColor)
 {
 	lineColor = newColor;
 }
+
+///Set the fill color for shapes, this color stays the same until it is changed by calling this function with a different value
+///This color applies to all shapes
 void SetFillColor(char newColor)
 {
 	fillColor = newColor;
 }
+
+///
 void DrawPixel(int x, int y, char color)
 {
 	UB_VGA_SetPixel(x,y,color);
@@ -58,7 +66,7 @@ void DrawCircle(int x, int y, int radius, int isFilled)
 }
 
 
-// Vars x and y define the top left corner of the rectangle
+/// Variabels x and y define the top left corner of the rectangle
 void DrawRectangle(int x, int y, int width, int height,int isFilled)
 {
     int i, j;
@@ -86,6 +94,8 @@ void DrawRectangle(int x, int y, int width, int height,int isFilled)
 
 
 }
+
+///Draw line from "x1, y1" to "x2, y2" with specified color
 void DrawLineCol(int x1, int y1, int x2, int y2, char color)
 {
 
@@ -99,14 +109,16 @@ void DrawLineCol(int x1, int y1, int x2, int y2, char color)
         DrawPixel(x1 + i*dx/length,y1 + i*dy/length,color);
     }
 }
+
+///Draw line from "x1, y1" to "x2, y2" with color defined by function SetColor
 void DrawLine(int x1, int y1, int x2, int y2)
 {
 	DrawLineCol(x1,y1,x2,y2,lineColor);
 }
 
-/*	Draw a triangle with sides of equal length
+/*!	Draw a triangle with sides of equal length.
+ * 
  *	The triangle will be drawn with x and y as its center
- *
  *
  * The distance between two point of a triangle with equal sides is equal to the distance from the center to one of the points
  *
@@ -153,7 +165,9 @@ void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, int isFilled)
 	DrawLine(x2,y2,x3,y3);
 	DrawLine(x3,y3,x1,y1);
 }
-void DrawSimpleTriangle(int x, int y, float sideLength,int isFilled)
+
+///Draw triangle with specified side and bottom left corner on "x, y", user can specify wether or not the triangle should be filled.
+void DrawSimpleTriangle(int x, int y, float sideLength, int isFilled)
 {
 
 	int x1 = x;
@@ -179,6 +193,8 @@ void DrawSimpleTriangle(int x, int y, float sideLength,int isFilled)
 
 }
 
+///Draw ellipse with specified width and height. "x, y" specify the bottom left corner of an imaginary rectangle drawn around the ellipse. User can specify wether 
+/// or not the shape should be filled
 void DrawEllipse(int x, int y, int width, int height, int isFilled)
 {
 	float xRadius, yRadius, radius;

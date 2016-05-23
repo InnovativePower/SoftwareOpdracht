@@ -2,6 +2,9 @@
 #include "arialNormal.h"
 #include "arialBold.h"
 #include "arialCursive.h"
+#include "tnrNormal.h"
+#include "tnrBold.h"
+#include "tnrCursive.h"
 
 typedef enum
 {
@@ -12,7 +15,8 @@ typedef enum
 
 typedef enum
 {
-	arial16p
+	arial16p,
+	timesNewRoman8p
 }FONT_NAME;
 
  typedef struct
@@ -22,6 +26,7 @@ typedef enum
  }FONT;
 
 extern FONT fArial16p;
+extern FONT fTimesNewRoman8p;
 
 const FONT_INFO* currentFontInfo;
 char textColor;

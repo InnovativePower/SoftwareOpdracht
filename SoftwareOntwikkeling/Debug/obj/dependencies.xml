@@ -1,117 +1,145 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
    <includePath signature="/I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis /I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht /I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis_boot /I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis_lib /I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\ub_lib /I..\..\..\..\..\Users\daanv /I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\cmsis_lib\include /I..\..\..\..\..\Users\daanv\Desktop /I..\..\..\..\..\Users\daanv\Desktop\SoftwareOpdracht\-lm">
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="154cb5d9c99">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="154db7fdacc">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="154cb1b62e3">
-      </source>
-      <source file="..\..\..\cmsis\core_cm4.h" lastModified="154cb1b5ed7">
-         <include file="..\..\..\cmsis\core_cmInstr.h"/>
-         <include file="..\..\..\cmsis\core_cmFunc.h"/>
-         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154d3d5bd61">
-         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
-      </source>
-      <source file="..\..\..\arialCursive.h" lastModified="154db72517f">
-         <include file="..\..\..\Font.h"/>
-      </source>
-      <source file="..\..\..\arialNormal.h" lastModified="154db6e628d">
-         <include file="..\..\..\Font.h"/>
-      </source>
-      <source file="..\..\..\arialCursive.c" lastModified="154db745c18">
-         <include file="..\..\..\arialCursive.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="154c737fd80">
-      </source>
-      <source file="..\..\..\arialNormal.c" lastModified="154db2ce1b5">
-         <include file="..\..\..\arialNormal.h"/>
-      </source>
-      <source file="..\..\..\Font.h" lastModified="154db07354f">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="154c737fd80">
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="154db7fdab0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="154c737fd80">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="154c737fd80">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="154c737fd80">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\Font.c" lastModified="154d0052ab1">
-      </source>
-      <source file="..\..\..\middle.h" lastModified="154db69cf54">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="154c737fd80">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\text.h" lastModified="154db7311a6">
-         <include file="..\..\..\middle.h"/>
-         <include file="..\..\..\arialNormal.h"/>
-         <include file="..\..\..\arialBold.h"/>
-         <include file="..\..\..\arialCursive.h"/>
-      </source>
-      <source file="..\..\..\middle.c" lastModified="154d5bb5732">
-         <include file="..\..\..\middle.h"/>
-         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="154c7384ba0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="154db7fdac5">
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="154c7380168">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="154db7fdacf">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="154db7fdabd">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="154db7fe268">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="154db7fdac8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="154db7fe262">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="154db7fdab4">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="154db7fde8e">
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="154c737fd80">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="154c737fd80">
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\syscalls\syscalls.c" lastModified="154cb278def">
-      </source>
-      <source file="..\..\..\text.c" lastModified="154db7311b6">
-         <include file="..\..\..\text.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="154c737fd80">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\arialBold.h" lastModified="154db6e4c12">
+      <source file="..\..\..\tnrNormal.h" lastModified="154de5cc6c2">
          <include file="..\..\..\Font.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="154cb1b62d7">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="154db7fdab8">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="154cb1ba3a1">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\arialBold.c" lastModified="154db6ebeae">
+      <source file="..\..\..\text.h" lastModified="154debd3302">
+         <include file="..\..\..\middle.h"/>
+         <include file="..\..\..\arialNormal.h"/>
          <include file="..\..\..\arialBold.h"/>
+         <include file="..\..\..\arialCursive.h"/>
+         <include file="..\..\..\tnrNormal.h"/>
+         <include file="..\..\..\tnrBold.h"/>
+         <include file="..\..\..\tnrCursive.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="154c737fd80">
+      <source file="..\..\..\middle.h" lastModified="154d98c8690">
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="154c737fd80">
+      <source file="..\..\..\main.h" lastModified="154d98c8a78">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
+         <include file="..\..\..\middle.h"/>
+         <include file="..\..\..\text.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="154db7fea7e">
+      </source>
+      <source file="..\..\..\tnrNormal.c" lastModified="154dea9dd48">
+         <include file="..\..\..\tnrNormal.h"/>
+      </source>
+      <source file="..\..\..\middle.c" lastModified="154ddbdc490">
+         <include file="..\..\..\middle.h"/>
+         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="154db8028c9">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="154cb1b62c8">
+      <source file="..\..\..\text.c" lastModified="154debda673">
+         <include file="..\..\..\text.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="154cb1b9e37">
+      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="154dec3bb0e">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="154db7fe26d">
+      </source>
+      <source file="..\..\..\main.c" lastModified="154dec0b7bd">
+         <include file="..\..\..\main.h"/>
+      </source>
+      <source file="..\..\..\tnrBold.h" lastModified="154deb9be99">
+         <include file="..\..\..\Font.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154db7fde30">
+         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
+      </source>
+      <source file="..\..\..\tnrBold.c" lastModified="154debaebed">
+         <include file="..\..\..\tnrBold.h"/>
+      </source>
+      <source file="..\..\..\arialCursive.h" lastModified="154d98c8690">
+         <include file="..\..\..\Font.h"/>
+      </source>
+      <source file="..\..\..\tnrCursive.h" lastModified="154debc40aa">
+         <include file="..\..\..\Font.h"/>
+      </source>
+      <source file="..\..\..\arialNormal.h" lastModified="154d98c8690">
+         <include file="..\..\..\Font.h"/>
+      </source>
+      <source file="..\..\..\arialCursive.c" lastModified="154deb2d9e4">
+         <include file="..\..\..\arialCursive.h"/>
+      </source>
+      <source file="..\..\..\arialBold.h" lastModified="154d98c8690">
+         <include file="..\..\..\Font.h"/>
+      </source>
+      <source file="..\..\..\tnrCursive.c" lastModified="154dec112ef">
+         <include file="..\..\..\tnrCursive.h"/>
+      </source>
+      <source file="..\..\..\arialNormal.c" lastModified="154deabc227">
+         <include file="..\..\..\arialNormal.h"/>
+      </source>
+      <source file="..\..\..\arialBold.c" lastModified="154deae3da2">
+         <include file="..\..\..\arialBold.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="154db7fde77">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="154db7fdaaf">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="154db7fdad4">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Font.h" lastModified="154d98c8690">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="154db7fdaa0">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="154db7fdac1">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="154db7fdaaf">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
    </includePath>
