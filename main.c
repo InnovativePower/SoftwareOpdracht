@@ -11,9 +11,6 @@
 //--------------------------------------------------------------
 
 #include "main.h"
-#include "stm32_ub_vga_screen.h"
-#include <math.h>
-#include "middle.h"
 
 
 int main(void)
@@ -21,7 +18,7 @@ int main(void)
 	///Low level initialization
 	SystemInit(); // System speed to 168MHz
 	UB_VGA_Screen_Init(); // Init VGA-Screen
-	UB_VGA_FillScreen(VGA_COL_BLACK);
+	UB_VGA_FillScreen(VGA_COL_WHITE);
   	UB_VGA_SetPixel(10,10,10);
   	//UB_VGA_FillScreen(VGA_COL_BLACK);
 
@@ -29,7 +26,6 @@ int main(void)
 	InitMiddle();
 	SetLineColor(VGA_COL_BLUE);
 	SetFillColor(VGA_COL_RED);
-
 
 
 
@@ -43,6 +39,7 @@ int main(void)
 	SetFillColor(VGA_COL_YELLOW);
 
 
+
 	DrawEllipse(150,150,20,100,1);
 	SetFillColor(VGA_COL_MAGENTA);
 	DrawSimpleTriangle(100,100,40,1);
@@ -50,6 +47,19 @@ int main(void)
 	SetFillColor(VGA_COL_CYAN);
 	DrawRectangle(200,50,100,100,1);
 	DrawTriangle(80,50,100,120,180,200,1);
+
+
+	SetFont(arial16p,normal);
+	SetTextColor(VGA_COL_BLUE);
+	DrawString("Hello world!",100,50);
+
+	SetFont(arial16p,bold);
+	SetTextColor(VGA_COL_RED);
+	DrawString("Hello world!",100,100);
+
+	SetFont(arial16p,cursive);
+	SetTextColor(VGA_COL_WHITE);
+	DrawString("Hello world!",100,150);
 	while(1);
 }
 

@@ -10,6 +10,8 @@ typedef struct
 {
   int height; // Character height in bits.
   char start_char; // Start character.
+  char stop_char;
+  int space_width;
   const FONT_CHAR_INFO *p_character_descriptor; // Character decriptor array.
   const char *p_character_bitmaps; // Character bitmap array.
 }

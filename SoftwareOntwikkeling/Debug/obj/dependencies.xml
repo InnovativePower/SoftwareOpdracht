@@ -19,7 +19,21 @@
       <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154d3d5bd61">
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
+      <source file="..\..\..\arialCursive.h" lastModified="154db72517f">
+         <include file="..\..\..\Font.h"/>
+      </source>
+      <source file="..\..\..\arialNormal.h" lastModified="154db6e628d">
+         <include file="..\..\..\Font.h"/>
+      </source>
+      <source file="..\..\..\arialCursive.c" lastModified="154db745c18">
+         <include file="..\..\..\arialCursive.h"/>
+      </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="154c737fd80">
+      </source>
+      <source file="..\..\..\arialNormal.c" lastModified="154db2ce1b5">
+         <include file="..\..\..\arialNormal.h"/>
+      </source>
+      <source file="..\..\..\Font.h" lastModified="154db07354f">
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -34,11 +48,19 @@
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\middle.h" lastModified="154d5a0c221">
+      <source file="..\..\..\Font.c" lastModified="154d0052ab1">
+      </source>
+      <source file="..\..\..\middle.h" lastModified="154db69cf54">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\text.h" lastModified="154db7311a6">
+         <include file="..\..\..\middle.h"/>
+         <include file="..\..\..\arialNormal.h"/>
+         <include file="..\..\..\arialBold.h"/>
+         <include file="..\..\..\arialCursive.h"/>
       </source>
       <source file="..\..\..\middle.c" lastModified="154d5bb5732">
          <include file="..\..\..\middle.h"/>
@@ -64,19 +86,22 @@
       </source>
       <source file="..\..\..\syscalls\syscalls.c" lastModified="154cb278def">
       </source>
-      <source file="..\..\..\main.h" lastModified="152a1cbad50">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      <source file="..\..\..\text.c" lastModified="154db7311b6">
+         <include file="..\..\..\text.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="154c737fd80">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\arialBold.h" lastModified="154db6e4c12">
+         <include file="..\..\..\Font.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="154cb1b62d7">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="154cb1ba3a1">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\top.h" lastModified="154c737fd80">
-         <include file="..\..\..\middle.h"/>
+      <source file="..\..\..\arialBold.c" lastModified="154db6ebeae">
+         <include file="..\..\..\arialBold.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="154c737fd80">
       </source>
@@ -85,9 +110,6 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="154cb1b62c8">
-      </source>
-      <source file="..\..\..\top.c" lastModified="154c737fd80">
-         <include file="..\..\..\top.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="154cb1b9e37">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>

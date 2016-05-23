@@ -11,7 +11,10 @@
 // Includes
 //--------------------------------------------------------------
 #include "stm32f4xx.h"
-
+#include "stm32_ub_vga_screen.h"
+#include <math.h>
+#include "middle.h"
+#include "text.h"
 
 
 //--------------------------------------------------------------

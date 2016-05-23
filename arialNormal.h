@@ -1,4 +1,8 @@
-#include "Font.h"
+#ifndef FONT_INCLUDED
+#define FONT_INCLUDED
+#include "font.h"
+
+#endif
 
 // Font data for Arial 16pt
 extern const char arial_16ptBitmaps[];

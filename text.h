@@ -1,17 +1,30 @@
 #include "middle.h"
 #include "arialNormal.h"
-enum STYLE{
+#include "arialBold.h"
+#include "arialCursive.h"
+
+typedef enum
+{
 	normal =0,
 	bold,
-	cursive,
-	underlined
-}typedef Style;
-struct FONT{
-	const char* styles[4];
-}typedef Font;
+	cursive
+}FONT_STYLE;
 
+typedef enum
+{
+	arial16p
+}FONT_NAME;
 
-Font* currentFont;
-Style currentStyle;
+ typedef struct
+ {
+	 const FONT_INFO* styles[4];
 
-const Font Arial = {{arial_16ptBitmaps,0,0,0}};
+ }FONT;
+
+extern FONT fArial16p;
+
+const FONT_INFO* currentFontInfo;
+char textColor;
+ void DrawString(char* string, int x, int y);
+ void SetFont(FONT_NAME font, FONT_STYLE style);
+ void SetTextColor(char color);
