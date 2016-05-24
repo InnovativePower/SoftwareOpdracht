@@ -29,7 +29,7 @@ int main(void)
 	UB_VGA_Screen_Init(); // Init VGA-Screen
 	UB_VGA_FillScreen(VGA_COL_BLACK);
 
-
+	SetLineThickness(5);
 	int key = key_1, prevKey = key_0;
 	while(1)
 	{
@@ -44,9 +44,13 @@ int main(void)
 				SetFont(arial16p,bold);
 				DrawBackGround(&niceLice,tiled);
 				SetTextColor(VGA_COL_BLUE);
+				SetLineColor(VGA_COL_RED);
+				SetFillColor(VGA_COL_WHITE);
+				DrawEllipse(150,100,100,30,1);
 				DrawString("Asian Experience", 90,90);
 				DrawString("50 dollahrs",125,110);
-				DrawBMP(100,130,&wc,VGA_COL_BROWN);
+				DrawBMP(100,130,&wc,VGA_COL_WHITE);
+				//DrawCircle(100,100,40,1);
 				break;
 			case key_2:
 				SetFont(arial16p,cursive);

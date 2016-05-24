@@ -9,7 +9,10 @@ void InitMiddle()
 	lineColor = 0;
 	fillColor = 0;
 }
-
+void SetLineThickness(int newThickness)
+{
+	lineThickness = newThickness;
+}
 ///Set the line color for shapes, this color stays the same until it is changed by calling this function with a different value
 ///This color applies to all shapes
 void SetLineColor(char newColor)
@@ -44,10 +47,21 @@ void DrawCircle(int x, int y, int radius, int isFilled)
 			dp = dp + 2 * (++dx) - 2 * (--dy) + 5;
 		if(isFilled)
 		{
-			DrawLineCol(x + dx,y + dy,x - dx,y + dy,fillColor);
-			DrawLineCol(x + dx,y - dy,x - dx,y - dy,fillColor);
-			DrawLineCol(x + dy,y + dx,x - dy,y + dx,fillColor);
-			DrawLineCol(x + dy,y - dx,x - dy,y - dx,fillColor);
+			int i;
+			for(i = 0; i <= 2*dx; i++)
+			{
+				DrawPixel(x-dx + i, y + dy,lineColor);
+				DrawPixel(x-dx + i, y - dy,lineColor);
+			}
+			for(i = 0; i <= 2*dy; i++)
+			{
+				DrawPixel(x-dy + i, y + dx,lineColor);
+				DrawPixel(x-dy + i, y - dx,lineColor);
+			}
+			//DrawLineCol(x + dx,y + dy,x - dx,y + dy,fillColor);
+			//DrawLineCol(x + dx,y - dy,x - dx,y - dy,fillColor);
+			//DrawLineCol(x + dy,y + dx,x - dy,y + dx,fillColor);
+			//DrawLineCol(x + dy,y - dx,x - dy,y - dx,fillColor);
 		}
 		DrawPixel(x + dx, y + dy, lineColor);     //For the 8 octants
 		DrawPixel(x - dx, y + dy, lineColor);
@@ -59,8 +73,8 @@ void DrawCircle(int x, int y, int radius, int isFilled)
 		DrawPixel(x - dy, y - dx, lineColor);
 
 	} while (dx < dy);
-	if(isFilled)
-		DrawLineCol(x-radius,y,x + radius,y,fillColor);
+	//if(isFilled)
+	//	DrawLineCol(x-radius,y,x + radius,y,fillColor);
 	DrawPixel(x-radius,y, lineColor);
 	DrawPixel(x+radius,y, lineColor);
 }
@@ -105,13 +119,28 @@ void DrawLineCol(int x1, int y1, int x2, int y2, char color)
     int i;
     float xRatio = dx/length;
     float yRatio = dy/length;
+    char fillColorBuffer = fillColor;
+    char lineColorBuffer = lineColor;
+    SetFillColor(color);
+    SetLineColor(color);
     for(i = 0; i <= length/2 + 1; i++)
     {
     	int xPos = i*xRatio;
     	int yPos = i*yRatio;
-        DrawPixel(x1 + xPos,y1 + yPos,color);
-        DrawPixel(x2 - xPos,y2 - yPos,color);
+
+        if(lineThickness > 1)
+        {
+        	DrawCircle(x1 + xPos,y1 + yPos,lineThickness/2,1);
+        	DrawCircle(x2 - xPos,y2 - yPos,lineThickness/2,1);
+        }
+        else
+        {
+        	DrawPixel(x1 + xPos,y1 + yPos,color);
+        	DrawPixel(x2 - xPos,y2 - yPos,color);
+        }
     }
+    SetFillColor(fillColorBuffer);
+    SetLineColor(lineColorBuffer);
 }
 
 ///Draw line from "x1, y1" to "x2, y2" with color defined by function SetColor
@@ -203,6 +232,7 @@ void DrawEllipse(int x, int y, int width, int height, int isFilled)
 
 	float dx = 0, dy = radius;
 	int dp = 1 - radius;
+
 	do
 	{
 		if (dp < 0)
@@ -215,20 +245,36 @@ void DrawEllipse(int x, int y, int width, int height, int isFilled)
 		float yScaledDy = yRadius*dy;
 		if(isFilled)
 		{
+			int lineThicknessBuffer = lineThickness;
+			SetLineThickness(1);
 			DrawLineCol(x + xScaledDx,y + yScaledDy,x - xScaledDx,y + yScaledDy,fillColor);
 			DrawLineCol(x + xScaledDx,y - yScaledDy,x - xScaledDx,y - yScaledDy,fillColor);
 			DrawLineCol(x + xScaledDy,y + yScaledDx,x - xScaledDy,y + yScaledDx,fillColor);
 			DrawLineCol(x + xScaledDy,y - yScaledDx,x - xScaledDy,y - yScaledDx,fillColor);
+			SetLineThickness(lineThicknessBuffer);
 		}
-		DrawPixel(x + xScaledDx, y + yScaledDy, lineColor);     //For the 8 octants
-		DrawPixel(x - xScaledDx, y + yScaledDy, lineColor);
-		DrawPixel(x + xScaledDx, y - yScaledDy, lineColor);
-		DrawPixel(x - xScaledDx, y - yScaledDy, lineColor);
-		DrawPixel(x + xScaledDy, y + yScaledDx, lineColor);
-		DrawPixel(x - xScaledDy, y + yScaledDx, lineColor);
-		DrawPixel(x + xScaledDy, y - yScaledDx, lineColor);
-		DrawPixel(x - xScaledDy, y - yScaledDx, lineColor);
-
+		if(lineThickness <= 1)
+		{
+			DrawPixel(x + xScaledDx, y + yScaledDy, lineColor);     //For the 8 octants
+			DrawPixel(x - xScaledDx, y + yScaledDy, lineColor);
+			DrawPixel(x + xScaledDx, y - yScaledDy, lineColor);
+			DrawPixel(x - xScaledDx, y - yScaledDy, lineColor);
+			DrawPixel(x + xScaledDy, y + yScaledDx, lineColor);
+			DrawPixel(x - xScaledDy, y + yScaledDx, lineColor);
+			DrawPixel(x + xScaledDy, y - yScaledDx, lineColor);
+			DrawPixel(x - xScaledDy, y - yScaledDx, lineColor);
+		}
+		else
+		{
+			DrawCircle(x + xScaledDx, y + yScaledDy,lineThickness/2,1);     //For the 8 octants
+			DrawCircle(x - xScaledDx, y + yScaledDy,lineThickness/2,1);
+			DrawCircle(x + xScaledDx, y - yScaledDy,lineThickness/2,1);
+			DrawCircle(x - xScaledDx, y - yScaledDy,lineThickness/2,1);
+			DrawCircle(x + xScaledDy, y + yScaledDx,lineThickness/2,1);
+			DrawCircle(x - xScaledDy, y + yScaledDx,lineThickness/2,1);
+			DrawCircle(x + xScaledDy, y - yScaledDx,lineThickness/2,1);
+			DrawCircle(x - xScaledDy, y - yScaledDx,lineThickness/2,1);
+		}
 	} while (dx < dy);
 	if(isFilled)
 		DrawLineCol(x-width/2,y,x + width/2,y,fillColor);

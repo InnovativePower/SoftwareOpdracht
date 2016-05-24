@@ -13,6 +13,7 @@ void SetFillColor(char newFillColor);
 void DrawPixel(int x, int y, char color);
 
 void DrawCircle(int x, int y, int radius, int isFilled);
-
+void SetLineThickness(int newThickness);
 char fillColor;
 char lineColor;
+int lineThickness;
