@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.8.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=SoftwareOntwikkeling.map -O0 --gc-sections -lm -LH:\CoIDE\configuration\ProgramData\SoftwareOntwikkeling -TH:\CoIDE\configuration\ProgramData\SoftwareOntwikkeling/arm-gcc-link.ld -g">
-      <target file="SoftwareOntwikkeling.elf" lastModified="154e263c791">
+      <target file="SoftwareOntwikkeling.elf" lastModified="154e269cb0b">
          <source file="..\obj\tnrCursive.o" lastModified="154e21cf88a"/>
          <source file="..\obj\keys.o" lastModified="154e22ad56a"/>
          <source file="..\obj\arialCursive.o" lastModified="154e21cf8f7"/>
          <source file="..\obj\arialNormal.o" lastModified="154e21cf945"/>
          <source file="..\obj\startup_stm32f4xx.o" lastModified="154e21cf993"/>
-         <source file="..\obj\main.o" lastModified="154e263c508"/>
+         <source file="..\obj\main.o" lastModified="154e269c876"/>
          <source file="..\obj\stm32f4xx_rcc.o" lastModified="154e2298bdd"/>
          <source file="..\obj\text.o" lastModified="154e21cfcb0"/>
          <source file="..\obj\stm32f4xx_gpio.o" lastModified="154e2298c4a"/>

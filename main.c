@@ -50,8 +50,11 @@ int main(void)
 				SetFont(arial16p,cursive);
 				SetTextColor(VGA_COL_GREEN);
 				DrawString("Axel is een humongus faggit", 50,100);
-				DrawBMP(100,130,&bluntBoy,VGA_COL_BROWN);
+				DrawBMP(100,130,&wc,VGA_COL_BROWN);
 				break;
+			default:
+				DrawBackGround(&snoopy,tiled);
+
 
 			}
 		}
