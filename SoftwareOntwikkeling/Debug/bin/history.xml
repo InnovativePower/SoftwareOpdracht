@@ -1,25 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="5.3.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=SoftwareOntwikkeling.map -O0 --gc-sections -lm -LC:\CooCox\CoIDE\configuration\ProgramData\SoftwareOntwikkeling -TC:\CooCox\CoIDE\configuration\ProgramData\SoftwareOntwikkeling/arm-gcc-link.ld -g">
-      <target file="SoftwareOntwikkeling.elf" lastModified="154dec3bfaa">
-         <source file="..\obj\tnrCursive.o" lastModified="154dec114a8"/>
-         <source file="..\obj\arialCursive.o" lastModified="154deb2db86"/>
-         <source file="..\obj\arialNormal.o" lastModified="154deabc3b9"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="154de38fdaf"/>
-         <source file="..\obj\main.o" lastModified="154dec3bcc2"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="154de38fe6f"/>
-         <source file="..\obj\text.o" lastModified="154debda92f"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="154de38ff23"/>
-         <source file="..\obj\tnrBold.o" lastModified="154debb1afd"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="154de38ff67"/>
-         <source file="..\obj\syscalls.o" lastModified="154de390067"/>
-         <source file="..\obj\stm32f4xx_dma.o" lastModified="154de3900c0"/>
-         <source file="..\obj\arialBold.o" lastModified="154deae3f31"/>
-         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="154dec3bd16"/>
-         <source file="..\obj\misc.o" lastModified="154de390196"/>
-         <source file="..\obj\tnrNormal.o" lastModified="154dea9ded4"/>
-         <source file="..\obj\middle.o" lastModified="154dec3bd8f"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="154de3902c3"/>
+   <processor signature="4.8.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=SoftwareOntwikkeling.map -O0 --gc-sections -lm -LH:\CoIDE\configuration\ProgramData\SoftwareOntwikkeling -TH:\CoIDE\configuration\ProgramData\SoftwareOntwikkeling/arm-gcc-link.ld -g">
+      <target file="SoftwareOntwikkeling.elf" lastModified="154e22c6201">
+         <source file="..\obj\tnrCursive.o" lastModified="154e21cf88a"/>
+         <source file="..\obj\keys.o" lastModified="154e22ad56a"/>
+         <source file="..\obj\arialCursive.o" lastModified="154e21cf8f7"/>
+         <source file="..\obj\arialNormal.o" lastModified="154e21cf945"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="154e21cf993"/>
+         <source file="..\obj\main.o" lastModified="154e22c5f7e"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="154e2298bdd"/>
+         <source file="..\obj\text.o" lastModified="154e21cfcb0"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="154e2298c4a"/>
+         <source file="..\obj\tnrBold.o" lastModified="154e21cfd61"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="154e2298ca8"/>
+         <source file="..\obj\syscalls.o" lastModified="154e21cfe6b"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="154e2298d34"/>
+         <source file="..\obj\arialBold.o" lastModified="154e21cff26"/>
+         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="154e2298de0"/>
+         <source file="..\obj\misc.o" lastModified="154e2298e3e"/>
+         <source file="..\obj\tnrNormal.o" lastModified="154e21d0036"/>
+         <source file="..\obj\middle.o" lastModified="154e2298eea"/>
+         <source file="..\obj\image.o" lastModified="154e21d019d"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="154e2298fd4"/>
       </target>
    </processor>
 </history>

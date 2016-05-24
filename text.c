@@ -37,13 +37,13 @@ int DrawChar(char character,int x, int y)
 		charWidth ++;
 	}
 	int charHeight = currentFontInfo->height;
-
-	for(int i = 0; i < charHeight; i++)
+	int i,j,k;
+	for( i = 0; i < charHeight; i++)
 	{
-		for(int j = 0; j < charWidth; j++)
+		for( j = 0; j < charWidth; j++)
 		{
 				char currentByte = fontBitmap[templateOffset+i*charWidth + j ];
-				for(int k = 0; k < 8; k++)
+				for( k = 0; k < 8; k++)
 				{
 					if((currentByte & 1<< k) != 0)
 						DrawPixel(x+8-k +j*8,y+i,textColor);

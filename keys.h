@@ -30,6 +30,10 @@ After that, you can use polling to read a key with:
  * #include "stm32f4xx_gpio.h"
  * #include "stm32f4xx_syscfg.h"
  */
+#include "stm32f4xx.h"
+#include "stm32f4xx_rcc.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_syscfg.h"
 
 /****************Defines********************************/
 #define	KEY_R1			GPIO_Pin_11

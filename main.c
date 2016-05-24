@@ -25,6 +25,7 @@ int main(void)
 {
 	///Low level initialization
 	SystemInit(); // System speed to 168MHz
+	KEYS_init();
 	UB_VGA_Screen_Init(); // Init VGA-Screen
 	UB_VGA_FillScreen(VGA_COL_WHITE);
   	UB_VGA_SetPixel(10,10,10);
@@ -36,10 +37,8 @@ int main(void)
 	SetFillColor(VGA_COL_RED);
 
 
-
-
-
 	UB_VGA_FillScreen(VGA_COL_BLACK);
+	DrawBackGround(&snoopy);
 	DrawCircle(50,100,30,1);
 
 	SetFillColor(VGA_COL_GREEN);
@@ -53,7 +52,9 @@ int main(void)
 	DrawSimpleTriangle(100,100,40,1);
 	SetLineColor(VGA_COL_GREEN);
 	SetFillColor(VGA_COL_CYAN);
-	DrawRectangle(200,50,100,100,1);
+
+	DrawRectangle(200,50,150,100,1);
+	while(KEYS_read() != key_2);
 	DrawTriangle(80,50,100,120,180,200,1);
 
 	SetFont(timesNewRoman8p,normal);
@@ -79,6 +80,9 @@ int main(void)
 	SetFont(arial16p,cursive);
 	SetTextColor(VGA_COL_WHITE);
 	DrawString("Arial, 16 pt, cursive!",100,160);
+
+	DrawBMP(100,100,&wc,VGA_COL_WHITE);
+
 	while(1);
 }
 

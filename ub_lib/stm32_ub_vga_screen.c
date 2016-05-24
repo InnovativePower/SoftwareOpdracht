@@ -98,6 +98,7 @@ void UB_VGA_SetPixel(uint16_t xp, uint16_t yp, uint8_t color)
 /*
 *   Read a pixel from the RAM memory used to write to the VGA screen
 */
+/*
 char UB_VGA_ReadPixel(uint16_t xp, uint16_t yp)
 {
     char value;
@@ -107,7 +108,7 @@ char UB_VGA_ReadPixel(uint16_t xp, uint16_t yp)
     //read VGA RAM
     value = VGA_RAM1[(yp*(VGA_DISPLAY_X+1)+xp];
     return value;
-}
+}*/
 //--------------------------------------------------------------
 // interne Funktionen
 // init aller IO-Pins

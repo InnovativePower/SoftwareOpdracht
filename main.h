@@ -15,7 +15,8 @@
 #include <math.h>
 #include "middle.h"
 #include "text.h"
-
+#include "image.h"
+#include "keys.h"
 
 //--------------------------------------------------------------
 #endif // __STM32F4_UB_MAIN_H

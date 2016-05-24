@@ -26,8 +26,7 @@ After that, you can use polling to read a key with:
 	KEYS_read();
 */
 
-#include "includes.h"
-
+#include "keys.h"
 void KEYS_init(void)
 /* Keys initialize
  * In this function the ports are set for the keyboard.

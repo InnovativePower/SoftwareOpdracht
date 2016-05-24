@@ -141,19 +141,20 @@ void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, int isFilled)
 
 		char lineColorBuffer = lineColor;
 		SetLineColor(fillColor);
-		for(int i = 0; i < length1;i++)
+		int i;
+		for( i = 0; i < length1;i++)
 		{
 			float lineX = i*dx1/length1;
 			float lineY = i*dy1/length1;
 			DrawLine(x1 +lineX, y1 + lineY,x3 , y3);
 		}
-		for(int i = 0; i < length2;i++)
+		for( i = 0; i < length2;i++)
 		{
 			float lineX = i*dx2/length2;
 			float lineY = i*dy2/length2;
 			DrawLine(x2 +lineX, y2 + lineY,x1 , y1);
 		}
-		for(int i = 0; i < length3;i++)
+		for( i = 0; i < length3;i++)
 		{
 			float lineX = i*dx3/length3;
 			float lineY = i*dy3/length3;
@@ -180,7 +181,8 @@ void DrawSimpleTriangle(int x, int y, float sideLength, int isFilled)
 		{
 			char lineColorBuffer = lineColor;
 			SetLineColor(fillColor);
-			for(int i = 0; i < sideLength; i++)
+			int i;
+			for( i = 0; i < sideLength; i++)
 			{
 
 				DrawLine(x3+i,y3,x1,y1);
