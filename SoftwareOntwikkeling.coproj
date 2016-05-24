@@ -79,8 +79,8 @@
     <File name="cmsis_boot" path="" type="2"/>
     <File name="text.h" path="text.h" type="1"/>
     <File name="arialBold.c" path="arialBold.c" type="1"/>
-    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="arialCursive.c" path="arialCursive.c" type="1"/>
     <File name="middle.h" path="middle.h" type="1"/>

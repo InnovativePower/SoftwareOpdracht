@@ -27,62 +27,36 @@ int main(void)
 	SystemInit(); // System speed to 168MHz
 	KEYS_init();
 	UB_VGA_Screen_Init(); // Init VGA-Screen
-	UB_VGA_FillScreen(VGA_COL_WHITE);
-  	UB_VGA_SetPixel(10,10,10);
-  	//UB_VGA_FillScreen(VGA_COL_BLACK);
-
-	///Mid level initialization
-	InitMiddle();
-	SetLineColor(VGA_COL_BLUE);
-	SetFillColor(VGA_COL_RED);
-
-
 	UB_VGA_FillScreen(VGA_COL_BLACK);
-	DrawBackGround(&snoopy);
-	DrawCircle(50,100,30,1);
-
-	SetFillColor(VGA_COL_GREEN);
-
-	SetFillColor(VGA_COL_YELLOW);
 
 
+	int key, prevKey;
+	while(1)
+	{
 
-	DrawEllipse(150,150,20,100,1);
-	SetFillColor(VGA_COL_MAGENTA);
-	DrawSimpleTriangle(100,100,40,1);
-	SetLineColor(VGA_COL_GREEN);
-	SetFillColor(VGA_COL_CYAN);
+		while(!(key = KEYS_read()));
+		if(key != prevKey)
+		{
+			UB_VGA_FillScreen(VGA_COL_BLACK);
+			switch(key)
+			{
+			case key_1:
+				SetFont(arial16p,bold);
+				SetTextColor(VGA_COL_BLUE);
+				DrawString("Axel is een humongus faggit", 50,100);
+				DrawBMP(100,130,&bluntBoy,VGA_COL_BROWN);
+				break;
+			case key_2:
+				SetFont(arial16p,cursive);
+				SetTextColor(VGA_COL_GREEN);
+				DrawString("Axel is een humongus faggit", 50,100);
+				DrawBMP(100,130,&bluntBoy,VGA_COL_BROWN);
+				break;
 
-	DrawRectangle(200,50,150,100,1);
-	while(KEYS_read() != key_2);
-	DrawTriangle(80,50,100,120,180,200,1);
+			}
+		}
+		prevKey = key;
 
-	SetFont(timesNewRoman8p,normal);
-	SetTextColor(VGA_COL_GREEN);
-	DrawString("Times new roman, 8 pt, normal!",100,20);
-
-	SetFont(timesNewRoman8p,bold);
-	SetTextColor(VGA_COL_ORANGE);
-	DrawString("Times new roman, 8 pt, bold!",100,35);
-
-	SetFont(timesNewRoman8p,cursive);
-	SetTextColor(VGA_COL_YELLOW);
-	DrawString("Times new roman, 8 pt, italic!",100,50);
-
-	SetFont(arial16p,normal);
-	SetTextColor(VGA_COL_BLUE);
-    DrawString("Arial, 16 pt, normal!",100,100);
-
-	SetFont(arial16p,bold);
-	SetTextColor(VGA_COL_RED);
-	DrawString("Arial, 16 pt, bold!",100,130);
-
-	SetFont(arial16p,cursive);
-	SetTextColor(VGA_COL_WHITE);
-	DrawString("Arial, 16 pt, cursive!",100,160);
-
-	DrawBMP(100,100,&wc,VGA_COL_WHITE);
-
-	while(1);
+	}
 }
 

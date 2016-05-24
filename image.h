@@ -7,7 +7,13 @@ typedef struct
 	const char iBMP[MAX_SIZE];
 }BMP;
 
+typedef enum
+{
+	fill,
+	tiled
+}BGSTYLE;
 extern const BMP snoopy;
 extern const BMP wc;
+extern const BMP bluntBoy;
 void DrawBMP(int x, int y, const BMP* image, char transparantColor);
-void DrawBackGround(const BMP* image);
+void DrawBackGround(const BMP* image, BGSTYLE style);

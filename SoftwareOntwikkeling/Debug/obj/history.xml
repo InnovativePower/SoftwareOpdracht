@@ -40,8 +40,8 @@
       <target file="tnrBold.o" lastModified="154e21cfd61">
          <source file="..\..\..\tnrBold.c" lastModified="154e1d936f0"/>
       </target>
-      <target file="image.o" lastModified="154e21d019d">
-         <source file="..\..\..\image.c" lastModified="154e2199c6c"/>
+      <target file="image.o" lastModified="154e2479df9">
+         <source file="..\..\..\image.c" lastModified="154e2479b14"/>
       </target>
       <target file="tnrNormal.o" lastModified="154e21d0036">
          <source file="..\..\..\tnrNormal.c" lastModified="154e1d9370f"/>
@@ -58,8 +58,8 @@
       <target file="text.o" lastModified="154e21cfcb0">
          <source file="..\..\..\text.c" lastModified="154e1e5f95d"/>
       </target>
-      <target file="main.o" lastModified="154e22c5f7e">
-         <source file="..\..\..\main.c" lastModified="154e22c5d18"/>
+      <target file="main.o" lastModified="154e263c508">
+         <source file="..\..\..\main.c" lastModified="154e263c2a7"/>
       </target>
    </processor>
 </history>
