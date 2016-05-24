@@ -91,6 +91,8 @@ int main(void)
                 DrawLine(220,180,280,180); //Exit arrow
                 DrawLine(260,200,280,180);
                 DrawLine(260,160,280,180);
+
+                DrawEllipse(160,120,20,160,1);
 				break;
 			case key_4:
 				DrawBackGround(&bluntBoy,tiled);
