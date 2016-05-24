@@ -99,14 +99,18 @@ void DrawRectangle(int x, int y, int width, int height,int isFilled)
 void DrawLineCol(int x1, int y1, int x2, int y2, char color)
 {
 
-    float dx = x2 - x1;
-    float dy = y2 - y1;
+    int dx = x2 - x1;
+    int dy = y2 - y1;
     float length = sqrt(dx*dx + dy*dy);
     int i;
-    for(i = 0; i < length; i++)
+    float xRatio = dx/length;
+    float yRatio = dy/length;
+    for(i = 0; i <= length/2 + 1; i++)
     {
-
-        DrawPixel(x1 + i*dx/length,y1 + i*dy/length,color);
+    	int xPos = i*xRatio;
+    	int yPos = i*yRatio;
+        DrawPixel(x1 + xPos,y1 + yPos,color);
+        DrawPixel(x2 - xPos,y2 - yPos,color);
     }
 }
 
@@ -128,37 +132,19 @@ void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, int isFilled)
 {
 	if(isFilled)
 	{
-		float dx1 = x2 - x1;
-		float dy1 = y2 - y1;
-		float dx2 = x3 - x2;
-		float dy2 = y3 - y2;
-		float dx3 = x1 - x3;
-		float dy3 = y1 - y3;
+		int dx1 = x2 - x1;
+		int dy1 = y2 - y1;
 
-		float length1 = sqrt(dx1*dx1 + dy1*dy1);
-		float length2 = sqrt(dx2*dx2 + dy2*dy2);
-		float length3 = sqrt(dx3*dx3 + dy3*dy3);
+		float length = sqrt(dx1*dx1 + dy1*dy1);
 
 		char lineColorBuffer = lineColor;
 		SetLineColor(fillColor);
 		int i;
-		for( i = 0; i < length1;i++)
+		for( i = 0; i < length;i++)
 		{
-			float lineX = i*dx1/length1;
-			float lineY = i*dy1/length1;
+			float lineX = i*dx1/length;
+			float lineY = i*dy1/length;
 			DrawLine(x1 +lineX, y1 + lineY,x3 , y3);
-		}
-		for( i = 0; i < length2;i++)
-		{
-			float lineX = i*dx2/length2;
-			float lineY = i*dy2/length2;
-			DrawLine(x2 +lineX, y2 + lineY,x1 , y1);
-		}
-		for( i = 0; i < length3;i++)
-		{
-			float lineX = i*dx3/length3;
-			float lineY = i*dy3/length3;
-			DrawLine(x3 +lineX, y3 + lineY,x2 , y2);
 		}
 		SetLineColor(lineColorBuffer);
 	}

@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.8.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=SoftwareOntwikkeling.map -O0 --gc-sections -lm -LH:\CoIDE\configuration\ProgramData\SoftwareOntwikkeling -TH:\CoIDE\configuration\ProgramData\SoftwareOntwikkeling/arm-gcc-link.ld -g">
-      <target file="SoftwareOntwikkeling.elf" lastModified="154e269cb0b">
+      <target file="SoftwareOntwikkeling.elf" lastModified="154e2dd09d3">
          <source file="..\obj\tnrCursive.o" lastModified="154e21cf88a"/>
          <source file="..\obj\keys.o" lastModified="154e22ad56a"/>
          <source file="..\obj\arialCursive.o" lastModified="154e21cf8f7"/>
          <source file="..\obj\arialNormal.o" lastModified="154e21cf945"/>
          <source file="..\obj\startup_stm32f4xx.o" lastModified="154e21cf993"/>
-         <source file="..\obj\main.o" lastModified="154e269c876"/>
+         <source file="..\obj\main.o" lastModified="154e2dd074a"/>
          <source file="..\obj\stm32f4xx_rcc.o" lastModified="154e2298bdd"/>
-         <source file="..\obj\text.o" lastModified="154e21cfcb0"/>
+         <source file="..\obj\text.o" lastModified="154e2a0d80d"/>
          <source file="..\obj\stm32f4xx_gpio.o" lastModified="154e2298c4a"/>
          <source file="..\obj\tnrBold.o" lastModified="154e21cfd61"/>
          <source file="..\obj\system_stm32f4xx.o" lastModified="154e2298ca8"/>
          <source file="..\obj\syscalls.o" lastModified="154e21cfe6b"/>
          <source file="..\obj\stm32f4xx_dma.o" lastModified="154e2298d34"/>
          <source file="..\obj\arialBold.o" lastModified="154e21cff26"/>
-         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="154e2298de0"/>
+         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="154e2a780b0"/>
          <source file="..\obj\misc.o" lastModified="154e2298e3e"/>
          <source file="..\obj\tnrNormal.o" lastModified="154e21d0036"/>
-         <source file="..\obj\middle.o" lastModified="154e2298eea"/>
-         <source file="..\obj\image.o" lastModified="154e2479df9"/>
+         <source file="..\obj\middle.o" lastModified="154e2a78183"/>
+         <source file="..\obj\image.o" lastModified="154e2db7622"/>
          <source file="..\obj\stm32f4xx_tim.o" lastModified="154e2298fd4"/>
       </target>
    </processor>

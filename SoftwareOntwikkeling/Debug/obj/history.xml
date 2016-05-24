@@ -7,8 +7,8 @@
       <target file="tnrCursive.o" lastModified="154e21cf88a">
          <source file="..\..\..\tnrCursive.c" lastModified="154e1d93702"/>
       </target>
-      <target file="stm32_ub_vga_screen.o" lastModified="154e2298de0">
-         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154e1e63ab2"/>
+      <target file="stm32_ub_vga_screen.o" lastModified="154e2a780b0">
+         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154e2a77c70"/>
       </target>
       <target file="startup_stm32f4xx.o" lastModified="154e21cf993">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="154e1d9364d"/>
@@ -22,8 +22,8 @@
       <target file="system_stm32f4xx.o" lastModified="154e2298ca8">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="154e1d93678"/>
       </target>
-      <target file="middle.o" lastModified="154e2298eea">
-         <source file="..\..\..\middle.c" lastModified="154e1e6c730"/>
+      <target file="middle.o" lastModified="154e2a78183">
+         <source file="..\..\..\middle.c" lastModified="154e299afc1"/>
       </target>
       <target file="misc.o" lastModified="154e2298e3e">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="154e1d93698"/>
@@ -40,8 +40,8 @@
       <target file="tnrBold.o" lastModified="154e21cfd61">
          <source file="..\..\..\tnrBold.c" lastModified="154e1d936f0"/>
       </target>
-      <target file="image.o" lastModified="154e2479df9">
-         <source file="..\..\..\image.c" lastModified="154e2479b14"/>
+      <target file="image.o" lastModified="154e2db7622">
+         <source file="..\..\..\image.c" lastModified="154e2dadcf8"/>
       </target>
       <target file="tnrNormal.o" lastModified="154e21d0036">
          <source file="..\..\..\tnrNormal.c" lastModified="154e1d9370f"/>
@@ -55,11 +55,11 @@
       <target file="syscalls.o" lastModified="154e21cfe6b">
          <source file="..\..\..\syscalls\syscalls.c" lastModified="154e1d936e4"/>
       </target>
-      <target file="text.o" lastModified="154e21cfcb0">
-         <source file="..\..\..\text.c" lastModified="154e1e5f95d"/>
+      <target file="text.o" lastModified="154e2a0d80d">
+         <source file="..\..\..\text.c" lastModified="154e2a0a648"/>
       </target>
-      <target file="main.o" lastModified="154e269c876">
-         <source file="..\..\..\main.c" lastModified="154e269c624"/>
+      <target file="main.o" lastModified="154e2dd074a">
+         <source file="..\..\..\main.c" lastModified="154e2dd0517"/>
       </target>
    </processor>
 </history>

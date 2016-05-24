@@ -50,6 +50,7 @@ void UB_VGA_Screen_Init(void)
     }
   }
 
+
   // init IO-Pins
   P_VGA_InitIO();
   // init Timer

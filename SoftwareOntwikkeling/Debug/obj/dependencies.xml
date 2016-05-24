@@ -30,36 +30,13 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="154e1d93684">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\text.h" lastModified="154e1d936ec">
-         <include file="..\..\..\middle.h"/>
-         <include file="..\..\..\arialNormal.h"/>
-         <include file="..\..\..\arialBold.h"/>
-         <include file="..\..\..\arialCursive.h"/>
-         <include file="..\..\..\tnrNormal.h"/>
-         <include file="..\..\..\tnrBold.h"/>
-         <include file="..\..\..\tnrCursive.h"/>
-      </source>
       <source file="..\..\..\middle.h" lastModified="154e1d936dc">
       </source>
       <source file="..\..\..\tnrNormal.c" lastModified="154e1d9370f">
          <include file="..\..\..\tnrNormal.h"/>
       </source>
-      <source file="..\..\..\text.c" lastModified="154e1e5f95d">
-         <include file="..\..\..\text.h"/>
-      </source>
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="154e1d93747">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
-      </source>
       <source file="..\..\..\tnrBold.h" lastModified="154e1d936f4">
          <include file="..\..\..\Font.h"/>
-      </source>
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154e1e63ab2">
-         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
       <source file="..\..\..\tnrBold.c" lastModified="154e1d936f0">
          <include file="..\..\..\tnrBold.h"/>
@@ -144,13 +121,13 @@
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\image.h" lastModified="154e247839d">
+      <source file="..\..\..\image.h" lastModified="154e2db71ae">
          <include file="..\..\..\middle.h"/>
       </source>
       <source file="..\..\..\keys.c" lastModified="154e21e6d42">
          <include file="..\..\..\keys.h"/>
       </source>
-      <source file="..\..\..\image.c" lastModified="154e2479b14">
+      <source file="..\..\..\image.c" lastModified="154e2dadcf8">
          <include file="..\..\..\image.h"/>
       </source>
       <source file="..\..\..\tnrNormal.h" lastModified="154e1d93718">
@@ -159,7 +136,7 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="154e1d93684">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\text.h" lastModified="154e1d936ec">
+      <source file="..\..\..\text.h" lastModified="154e2a0d55a">
          <include file="..\..\..\middle.h"/>
          <include file="..\..\..\arialNormal.h"/>
          <include file="..\..\..\arialBold.h"/>
@@ -170,20 +147,12 @@
       </source>
       <source file="..\..\..\middle.h" lastModified="154e1d936dc">
       </source>
-      <source file="..\..\..\main.h" lastModified="154e21cfa6e">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
-         <include file="..\..\..\middle.h"/>
-         <include file="..\..\..\text.h"/>
-         <include file="..\..\..\image.h"/>
-         <include file="..\..\..\keys.h"/>
-      </source>
       <source file="..\..\..\syscalls\syscalls.c" lastModified="154e1d94684">
       </source>
       <source file="..\..\..\tnrNormal.c" lastModified="154e1d9370f">
          <include file="..\..\..\tnrNormal.h"/>
       </source>
-      <source file="..\..\..\middle.c" lastModified="154e1e6cb18">
+      <source file="..\..\..\middle.c" lastModified="154e299b3a9">
          <include file="..\..\..\middle.h"/>
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
@@ -195,19 +164,16 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\text.c" lastModified="154e1e5f95d">
+      <source file="..\..\..\text.c" lastModified="154e2a0a648">
          <include file="..\..\..\text.h"/>
       </source>
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="154e1d93747">
+      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="154e2a77cb8">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
-      </source>
-      <source file="..\..\..\main.c" lastModified="154e269c624">
-         <include file="..\..\..\main.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="154e1d93e17">
       </source>
@@ -217,7 +183,7 @@
       <source file="..\..\..\tnrBold.h" lastModified="154e1d936f4">
          <include file="..\..\..\Font.h"/>
       </source>
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154e1e63ab2">
+      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="154e2a77c70">
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
       <source file="..\..\..\tnrBold.c" lastModified="154e1d936f0">

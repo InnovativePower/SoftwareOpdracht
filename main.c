@@ -30,7 +30,7 @@ int main(void)
 	UB_VGA_FillScreen(VGA_COL_BLACK);
 
 
-	int key, prevKey;
+	int key = key_1, prevKey = key_0;
 	while(1)
 	{
 
@@ -42,9 +42,11 @@ int main(void)
 			{
 			case key_1:
 				SetFont(arial16p,bold);
+				DrawBackGround(&niceLice,tiled);
 				SetTextColor(VGA_COL_BLUE);
-				DrawString("Axel is een humongus faggit", 50,100);
-				DrawBMP(100,130,&bluntBoy,VGA_COL_BROWN);
+				DrawString("Asian Experience", 90,90);
+				DrawString("50 dollahrs",125,110);
+				DrawBMP(100,130,&wc,VGA_COL_BROWN);
 				break;
 			case key_2:
 				SetFont(arial16p,cursive);
@@ -52,9 +54,24 @@ int main(void)
 				DrawString("Axel is een humongus faggit", 50,100);
 				DrawBMP(100,130,&wc,VGA_COL_BROWN);
 				break;
-			default:
-				DrawBackGround(&snoopy,tiled);
+			case key_3:
+				SetLineColor(VGA_COL_RED);
+				SetFillColor(VGA_COL_YELLOW);
+				DrawTriangle(0,0,320,0,160,240,1);
 
+				break;
+			case key_4:
+				DrawBackGround(&bluntBoy,tiled);
+				DrawBMP(0,0,&beer,0);
+				DrawBMP(100,0,&exitSign,0);
+				DrawBMP(0,100,&note,VGA_COL_WHITE);
+				DrawBMP(100,100,&wc,0);
+				break;
+			default:
+				DrawBackGround(&bluntBoy,tiled);
+				int i;
+				for(i = 0; i < 2000; i++)
+					DrawBMP(rand() % 320, rand() %240,&bluntBoy,0);
 
 			}
 		}
