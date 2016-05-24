@@ -13,7 +13,7 @@
 /*! \mainpage Innovative Power Doxygen documentatie
  *
  * Deze documentatie is automatisch gegenereerd met behulp van Doxygen.
- * 
+ *
  * Kies een bestand uit de lijst hier links naast om o.a. de dependency graph, macro's, functies en variabelen van het betreffende bestand te zien.
  *
  */
@@ -59,10 +59,38 @@ int main(void)
 				DrawBMP(100,130,&wc,VGA_COL_BROWN);
 				break;
 			case key_3:
-				SetLineColor(VGA_COL_RED);
+				SetLineColor(VGA_COL_YELLOW);
 				SetFillColor(VGA_COL_YELLOW);
-				DrawTriangle(0,0,320,0,160,240,1);
+				SetFont(arial16p,bold)
+				SetTextColor(VGA_COL_CYAN);
 
+				DrawRectangle(20,100,120,10,1);
+				DrawRectangle(180,100,120,10,1);
+				DrawRectangle(20,210,120,10,1);
+                DrawRectangle(180,210,120,10,1);
+
+                DrawString("Music",20,20);
+                DrawString("WC",180,20);
+                DrawString("Coins",20,140);
+                DrawString("Exit",180,140);
+
+                DrawLine(40,70,100,70); //Music arrow
+                DrawLine(40,70,80,50);
+                DrawLine(40,70,80,90);
+
+                DrawLine(220,70,280,70); //WC arrow
+                DrawLine(260,50,280,70);
+                DrawLine(260,90,280,70);
+
+
+                DrawLine(40,180,100,180); //coin arrow
+                DrawLine(40,180,60,160);
+                DrawLine(40,180,60,200);
+
+
+                DrawLine(220,180,280,180); //Exit arrow
+                DrawLine(260,200,280,180);
+                DrawLine(260,160,280,180);
 				break;
 			case key_4:
 				DrawBackGround(&bluntBoy,tiled);
